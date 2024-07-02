@@ -1,0 +1,150 @@
+/* Styles */
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+  cursor: pointer !important;
+}
+
+.navbar-brand svg {
+  margin-top: -5px;
+  margin-right: 2px;
+}
+
+.navbar.navbar-dark {
+  background: #383838;
+  background: -moz-linear-gradient(45deg, #383838 0%, #dd4131 100%);
+  background: -webkit-linear-gradient(45deg, #383838 0%,#dd4131 100%);
+  background: linear-gradient(45deg, #383838 0%, #dd4131 100%);
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+#list.form-control {
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+}
+
+#list.form-control::-webkit-scrollbar {
+  background: #e9ecef;
+  width: 10px;
+  cursor: pointer !important;
+}
+
+#list.form-control::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.25);
+  border: 4px solid #e9ecef;
+  background-clip: content-box;
+  cursor: pointer !important;
+}
+
+#list.form-control::-webkit-scrollbar-thumb {
+  height: 60px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  cursor: pointer !important;
+}
+
+#submit-domain-input {
+  min-height: 120px;
+}
+
+.disposable-emails-list {
+  position: relative;
+}
+
+#search-query.form-control:focus {
+  box-shadow: none;
+}
+
+#domains-list {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 480px;
+  padding: 1rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  background-color: #e9ecef;
+  scrollbar-width: thin;
+}
+
+#domains-list ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.not-found {
+  display: none;
+}
+
+/* Tooltip Copy */
+
+.tooltip-copy .btn-copy {
+  border-right-color: transparent;
+}
+
+.tooltip-copy {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .tooltip-copy {
+    right: 2rem;
+  } 
+}
+
+.tooltip-copy .tooltiptext {
+  visibility: hidden;
+  min-width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-copy .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip-copy:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Utilities */
+
+@media only screen and (min-width: 992px) {
+  .w-lg-100 {
+    width: 100%;
+  }
+}
+
+.link-ext:hover,
+.link-ext:active {
+  text-decoration: underline !important;
+  color: #0d6efd !important;
+}
